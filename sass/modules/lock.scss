@@ -1,0 +1,36 @@
+.main-lock{
+  padding: 3em 0;
+  .row{
+    margin-bottom: 0;
+  }
+  &__title{
+    font-family: $title-font;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  &__button{
+    width: 7rem;
+    height: 7rem;
+    background: transparent;
+    box-shadow: 0 0 0 3px rgba(black,.87);
+    i{
+      color: rgba(black,.87);
+      line-height: 7rem;
+      font-size: 4rem;
+    }
+    &:hover{
+      background: rgba(black,.87);
+      box-shadow: 0 0 0 0 transparent;
+      i{
+        color: white;
+      }
+    }
+  }
+  &__locker{
+    padding: 3em 0;
+    &--description{
+      margin: 2em auto 0;
+      max-width: 270px;
+    }
+  }
+}

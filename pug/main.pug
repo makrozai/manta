@@ -1,0 +1,31 @@
+main.main.scrollspy#spaces
+  .container
+    .row
+      .col.s12
+        h3.main-title.wow.fadeInDown Espacios
+      .col.s12
+        p.main-description.wow.fadeInDown Espacios de colaboración, que incluyen todos los servicios e infraestructura completa, que proyectan una imagen profesional.
+      .col.s12
+        ul.main-spaces.wow.fadeInDown
+          - var icons = ['openoffice', 'reuniones', 'capacitacion', 'cafe', 'descanso'];
+          - var counter = 0;
+          each val in ['Open Office', 'Sala de Reuniones', 'Sala de Capacitación', 'Kitchenette', 'Área de Descanso']
+            if counter == 0
+              li.main-spaces__item.active
+                i.material-icons.medium(class='icon-' + icons[counter++])
+                p.main-space__title= val
+            else
+              li.main-spaces__item
+                i.material-icons.medium(class='icon-' + icons[counter++])
+                p.main-space__title= val
+      .col.s12
+        .main-spaces__images.wow.fadeInDown
+          .slider.single-item
+            each val in ['http://serendipia-coworking.com/img/slider-espacios/new/open-office.jpg', 'http://serendipia-coworking.com/img/slider-espacios/new/sala-reuniones.jpg', 'http://serendipia-coworking.com/img/slider-espacios/new/capacitaciones.jpg', 'http://serendipia-coworking.com/img/slider-espacios/new/kitchen.jpg', 'http://serendipia-coworking.com/img/slider-espacios/new/area-descanso.jpg']
+              div
+                .main-spaces__images--item
+                  img(src=''+ val +'' , alt="")
+  .row.main-sponsor
+    .col.s12.center-align.wow.fadeInDown
+      p.main-sponsor__description ¿Necesitas mayor información? ¿Tienes alguna duda?
+      a(href="#contact").waves-effect.waves-light.btn-large.main-sponsor__button ESCRÍBENOS

@@ -1,0 +1,34 @@
+section.main-benefits.scrollspy#benefits
+  .container
+    .row.center-align
+      .col.s12
+        h3.main-benefits__title.wow.fadeInDown Beneficios
+      .col.s12
+        p.main-benefits__description.wow.fadeInDown Ofrecemos un concepto innovador, ideal para independientes (freelancers), startups y pequeñas empresas; con beneficios insuperables.
+    .row
+      .main-benefits__container.wow.fadeInDown
+        - var benefits = ['internet', 'asesoria', 'kitchenette', 'timer', 'recepcion', 'aire', 'reunion', 'comercial', 'recepcion-1', 'print', 'locker', 'cafe', 'camara', 'proyector', 'ubicacion'];
+        - var bentcount = 0;
+        each val in ['Internet fibra óptica', 'Asesoría legal y contable', 'Kitchenette', 'Disponiblidad 24/7', 'Servicio de recepción', 'Aire acondicionado', 'Salas de reunión', 'Dirección comercial y/o fiscal', 'Recepción de correspondencia', 'Print center', 'Lockers', 'Café ilimitado', 'Cámaras y control de acceso', 'Proyector', 'Ubicación prime']
+          .main-benefits__item
+            i.material-icons.main-benefits__item--icon(class='icon-' + benefits[bentcount++])
+            p.main-benefits__item--description= val
+    .row
+      h4.main-benefits__aditional--title.wow.fadeInDown Adicionales
+      .main-benefits__aditional.wow.fadeInDown
+        - aditionals = ['reunion', 'asesoria', 'reunion'];
+        - count = 0;
+        each val in ['Alquiler de salas de reuniones', 'Servicios contables y/o legales específicos', 'Alquiler de sala de capacitación']
+          .main-benefits__aditional--item
+            i.material-icons.main-benefits__aditional--icon(class ='icon-' + aditionals[count++])
+            p.main-benefits__aditional--description= val
+  .container.main-comunication
+    .main-comunication__content.wow.fadeInDown
+      - comunic = ['cel', 'marker', 'facebook'];
+      - messages = ['+511 771 8590', 'Solicita tu visita guiada' , 'fb.com/scoworking'];
+      - col = 0;
+      each val in ['¿Prefieres llamarnos?', '¿Te interesa nuestro espacio?', 'Danos un like']
+        a(href="").main-comunication__item
+          i.material-icons.main-comunication__icon(class='icon-' + comunic[col])
+          p.main-comunication__title= val
+          p.main-comunication__data= messages[col++]

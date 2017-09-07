@@ -1,0 +1,43 @@
+.main-agenda{
+  padding: 12em 0 4em;
+  
+  &__title{
+    font-family: $title-font;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 1em;
+  }
+  &__content.col{
+    padding: 0 2em;
+  }
+  &__lock{
+    padding: 1.5em 0;
+    display: flex;
+    align-items:center;
+
+    .main-lock{
+      &__button{
+        width: 5rem;
+        height: 5rem;
+        margin-right: 1.5em;
+
+        i{
+          line-height: 5rem;
+          font-size: 2.5em;
+        }
+      }
+      &__locker{
+        &--title{
+          margin: 0 0 .5em;
+          font-weight: 500;
+          font-size: 1.2em;
+          text-transform: uppercase;
+        }
+        &--description{
+          margin: 0;
+          color: darken(gray,17);
+        }
+      }
+    }
+  }
+}

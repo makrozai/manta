@@ -1,0 +1,24 @@
+.main-footer{
+  background: rgba(black,.87);
+  color: white;
+  padding: 1em 0;
+  .row{
+    margin-bottom: 0;
+  }
+  @media only screen and (max-width: 600px){
+    text-align: center;
+  }
+  &__subtitle{
+    margin-bottom: 0;
+  }
+  &__prop{
+    display: inline-block;
+    padding: 1em 0;
+  }
+
+  @media only screen and (max-width: 600px){
+    .right-align{
+      text-align: center;
+    }
+  }
+}
