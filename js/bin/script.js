@@ -1,4 +1,17 @@
 $(document).ready(function(){
+  var feed = new Instafeed({
+      get: 'user',
+      userId: '5311041315',
+    accessToken: '5311041315.9fa4503.a6e37da5a7104a32b9da007b13a1a6f8',
+      limit:1,
+      resolution: 'standard_resolution',
+      template: '<a class="animation" href="{{link}}" target="_blank"><img src="{{image}}" /><div class="coments"><p>{{likes}} <i class="material-icons icon-heart"></i></p><p>{{comments}}<i class="material-icons icon-comment"></i></p></div></a>'
+  });
+  feed.run();
+
+});
+
+$(document).ready(function(){
   $('.slider').slider({
     height:700
   });

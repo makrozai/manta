@@ -91,6 +91,44 @@
       margin: 1em 0 .5em;
       letter-spacing: 1px;
     }
+    &--instafeed{
+      width: 100%;
+      position: relative;
+      .animation{
+        
+        img{
+          width:100%;
+          display: block;
+        }
+      }
+      .coments{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        bottom: 0;
+        background: rgba(black,.7);
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction:column;
+        color: white;
+        opacity: 0;
+        transition:all .2s;
+        &:hover{
+          opacity: 1;
+        }
+        p{
+          margin: 0;
+          display: flex;
+          align-items:center;
+          i{
+            font-size: 1em;
+            margin-left: .5em;
+          }
+        }
+      }
+    }
     &--image{
       display: block;
       width: 100%;
