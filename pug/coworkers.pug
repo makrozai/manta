@@ -1,0 +1,27 @@
+section.main-coworkers
+  .parallax-container.main-coworkers__banner
+    .parallax
+      img(src="img/banner.jpg", alt="")
+      h1.main-coworkers__title
+        span proactivos
+        span emprendedores
+        span visionarios
+  .container.main-coworkers__box
+    .row
+      each val in [1, 2, 3, 4, 5, 6, 7, 8]
+        .col.s12.m6.l3
+          .main-coworkers__card
+            .main-coworkers__card--content
+              img(src="http://www.rand-img.com/400/450/couple", alt="").main-coworkers__card--content-image
+              p.main-coworkers__card--content-description "I don't need to compromise on my principles, because they don't have the slightest bearing on what happens to me anyway."
+            .main-coworkers__card--caption
+              h3.main-coworkers__card--name INGREDIA
+                span NUTRISHA
+              h4.main-coworkers__card--office Artist
+              .main-coworkers__card--social
+                a.main-coworkers__card--social-button
+                  i.material-icons.icon-facebook
+                a.main-coworkers__card--social-button
+                  i.material-icons.icon-twitter
+                a.main-coworkers__card--social-button
+                  i.material-icons.icon-instagram

@@ -1,6 +1,5 @@
 @import "modules/slick";
 @import "modules/slick-theme";
-@import "modules/instagrid";
 @import "materialize";
 
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,500');
@@ -27,4 +26,5 @@ $title-font : 'Oswald', sans-serif;
 @import "modules/blog";
 @import "modules/articulo";
 @import "modules/agenda";
+@import "modules/coworkers";
 @import "modules/footer";

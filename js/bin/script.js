@@ -12,6 +12,7 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
+  $('.parallax').parallax();
   $('.slider').slider({
     height:700
   });
