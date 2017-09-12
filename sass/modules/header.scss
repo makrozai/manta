@@ -12,7 +12,7 @@
         z-index: 5;
       }
       .caption{
-        z-index: 20;
+        z-index: 50;
 
         img{
           width: 196px;
@@ -48,7 +48,24 @@
           background: lighten($naranja,5);
         }
       }
-      
+    }
+    &__coworkers{
+      position: absolute;
+      z-index: 5;
+      top: 6em;
+      right: 0;
+      display: flex;
+      @media only screen and (max-width: 600px){
+        width: 100%;
+        justify-content:space-between;
+      }
+
+      img{
+        padding:1em;
+        display: block;
+        width: 9em;
+        height: 9em;
+      }
     }
   }
 }
