@@ -9756,10 +9756,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   transition: all 0.3s 1s ease-out; }
 
 .main-nav {
-  background: transparent;
+  background: white;
   text-transform: uppercase;
-  -webkit-box-shadow: 1px 0 0 1px rgba(0, 67, 240, 0.2);
-  box-shadow: 1px 0 0 1px rgba(0, 67, 240, 0.2);
+  -webkit-box-shadow: 1px 0 0 0px rgba(0, 67, 240, 0.2);
+  box-shadow: 1px 0 0 0px rgba(0, 67, 240, 0.2);
   -webkit-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s; }

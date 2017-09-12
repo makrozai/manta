@@ -1,8 +1,8 @@
 .main{
   &-nav{
-    background: transparent;
+    background: white;
     text-transform: uppercase;
-    box-shadow: 1px 0 0 1px rgba($azul,.2);
+    box-shadow: 1px 0 0 0px rgba($azul,.2);
     transition:all .3s;
 
     &__logo{
