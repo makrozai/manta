@@ -14,7 +14,11 @@
     transform: translateY(0%);
   }
 }
-
+.svgcolor-light path{
+  fill: white;
+  stroke: white;
+  stroke-width: 0;
+}
 #particles-js{
   opacity: .7;
   position: fixed;

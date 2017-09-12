@@ -1,6 +1,9 @@
 .main-contact{
-  background: lighten(#ccc,11);
-  padding: 3em;
+  background: lighten(black,95);
+  padding-bottom: 3em;
+  .container{
+    margin-top: 3em;
+  }
   &__title{
     font-family: $title-font;
     font-weight: 500;

@@ -4683,6 +4683,8 @@ label {
 /* Style Placeholders */
 ::-webkit-input-placeholder {
   color: gray; }
+::-moz-placeholder {
+  color: gray; }
 :-ms-input-placeholder {
   color: gray; }
 ::placeholder {
@@ -6607,11 +6609,11 @@ input[type=range]:focus::-ms-fill-upper {
     visibility: visible;
     -webkit-animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
     animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
-    -webkit-transition: opacity .3s, visibility 0s 1s, -webkit-transform .3s;
-    transition: opacity .3s, visibility 0s 1s, -webkit-transform .3s;
-    -o-transition: opacity .3s, transform .3s, visibility 0s 1s;
-    transition: opacity .3s, transform .3s, visibility 0s 1s;
-    transition: opacity .3s, transform .3s, visibility 0s 1s, -webkit-transform .3s; }
+    -webkit-transition: opacity .3s, visibility 0s 1s, -webkit-transform .3s;
+    transition: opacity .3s, visibility 0s 1s, -webkit-transform .3s;
+    -o-transition: opacity .3s, transform .3s, visibility 0s 1s;
+    transition: opacity .3s, transform .3s, visibility 0s 1s;
+    transition: opacity .3s, transform .3s, visibility 0s 1s, -webkit-transform .3s; }
 
 .tap-target {
   position: absolute;
@@ -6659,11 +6661,11 @@ input[type=range]:focus::-ms-fill-upper {
     transition: transform .3s, -webkit-transform .3s; }
   .tap-target-wave::after {
     visibility: hidden;
-    -webkit-transition: opacity .3s, visibility 0s, -webkit-transform .3s;
-    transition: opacity .3s, visibility 0s, -webkit-transform .3s;
-    -o-transition: opacity .3s, transform .3s, visibility 0s;
-    transition: opacity .3s, transform .3s, visibility 0s;
-    transition: opacity .3s, transform .3s, visibility 0s, -webkit-transform .3s;
+    -webkit-transition: opacity .3s, visibility 0s, -webkit-transform .3s;
+    transition: opacity .3s, visibility 0s, -webkit-transform .3s;
+    -o-transition: opacity .3s, transform .3s, visibility 0s;
+    transition: opacity .3s, transform .3s, visibility 0s;
+    transition: opacity .3s, transform .3s, visibility 0s, -webkit-transform .3s;
     z-index: -1; }
 
 .tap-target-origin {
@@ -9606,6 +9608,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     -webkit-transform: translateY(0%);
     transform: translateY(0%); } }
 
+.svgcolor-light path {
+  fill: white;
+  stroke: white;
+  stroke-width: 0; }
+
 #particles-js {
   opacity: .7;
   position: fixed;
@@ -9965,9 +9972,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       font-size: 2.5em; }
 
 .main-comunication {
-  max-width: 900px;
-  margin: 6em auto; }
+  padding: 0 0 6em;
+  background: #f2f2f2; }
+  .main-comunication .container {
+    max-width: 900px; }
   .main-comunication__content {
+    margin-top: 5em;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -9978,8 +9988,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   .main-comunication__item {
     width: 33.33%;
     text-align: center;
-    -webkit-box-shadow: 0 0 0 5px white inset, 0 0 0 6px rgba(0, 0, 0, 0.25) inset;
-    box-shadow: 0 0 0 5px white inset, 0 0 0 6px rgba(0, 0, 0, 0.25) inset;
+    -webkit-box-shadow: 0 0 0 5px #f2f2f2 inset, 0 0 0 6px rgba(0, 0, 0, 0.25) inset;
+    box-shadow: 0 0 0 5px #f2f2f2 inset, 0 0 0 6px rgba(0, 0, 0, 0.25) inset;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -9998,16 +10008,16 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     align-items: center;
     padding: 4em 1em 7em;
     position: relative;
-    color: #5a5a5a;
+    color: #404040;
     -webkit-transition: all 300ms linear;
     -o-transition: all 300ms linear;
     transition: all 300ms linear;
     overflow: hidden; }
     .main-comunication__item:hover {
+      color: white;
       background: #0043f0;
       -webkit-box-shadow: 0 0 0 0 transparent inset, 0 0 0 0 transparent inset;
-      box-shadow: 0 0 0 0 transparent inset, 0 0 0 0 transparent inset;
-      color: white; }
+      box-shadow: 0 0 0 0 transparent inset, 0 0 0 0 transparent inset; }
     @media only screen and (max-width: 992px) {
       .main-comunication__item {
         width: 100%;
@@ -10250,8 +10260,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       max-width: 270px; }
 
 .main-contact {
-  background: #e8e8e8;
-  padding: 3em; }
+  background: #f2f2f2;
+  padding-bottom: 3em; }
+  .main-contact .container {
+    margin-top: 3em; }
   .main-contact__title {
     font-family: "Oswald", sans-serif;
     font-weight: 500;
