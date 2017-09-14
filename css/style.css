@@ -6609,11 +6609,22 @@ input[type=range]:focus::-ms-fill-upper {
     visibility: visible;
     -webkit-animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
     animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
-    -webkit-transition: opacity .3s, visibility 0s 1s, -webkit-transform .3s;
-    transition: opacity .3s, visibility 0s 1s, -webkit-transform .3s;
-    -o-transition: opacity .3s, transform .3s, visibility 0s 1s;
-    transition: opacity .3s, transform .3s, visibility 0s 1s;
-    transition: opacity .3s, transform .3s, visibility 0s 1s, -webkit-transform .3s; }
+    -webkit-transition: opacity .3s,
+ visibility 0s 1s,
+ -webkit-transform .3s;
+    transition: opacity .3s,
+ visibility 0s 1s,
+ -webkit-transform .3s;
+    -o-transition: opacity .3s,
+ transform .3s,
+ visibility 0s 1s;
+    transition: opacity .3s,
+ transform .3s,
+ visibility 0s 1s;
+    transition: opacity .3s,
+ transform .3s,
+ visibility 0s 1s,
+ -webkit-transform .3s; }
 
 .tap-target {
   position: absolute;
@@ -6661,11 +6672,22 @@ input[type=range]:focus::-ms-fill-upper {
     transition: transform .3s, -webkit-transform .3s; }
   .tap-target-wave::after {
     visibility: hidden;
-    -webkit-transition: opacity .3s, visibility 0s, -webkit-transform .3s;
-    transition: opacity .3s, visibility 0s, -webkit-transform .3s;
-    -o-transition: opacity .3s, transform .3s, visibility 0s;
-    transition: opacity .3s, transform .3s, visibility 0s;
-    transition: opacity .3s, transform .3s, visibility 0s, -webkit-transform .3s;
+    -webkit-transition: opacity .3s,
+ visibility 0s,
+ -webkit-transform .3s;
+    transition: opacity .3s,
+ visibility 0s,
+ -webkit-transform .3s;
+    -o-transition: opacity .3s,
+ transform .3s,
+ visibility 0s;
+    transition: opacity .3s,
+ transform .3s,
+ visibility 0s;
+    transition: opacity .3s,
+ transform .3s,
+ visibility 0s,
+ -webkit-transform .3s;
     z-index: -1; }
 
 .tap-target-origin {
@@ -10038,8 +10060,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     .main-comunication__item:hover {
       color: white;
       background: #0043f0;
-      -webkit-box-shadow: 0 0 0 0 transparent inset, 0 0 0 0 transparent inset;
-      box-shadow: 0 0 0 0 transparent inset, 0 0 0 0 transparent inset; }
+      -webkit-box-shadow: 0 0 0 0 transparent inset,
+ 0 0 0 0 transparent inset;
+      box-shadow: 0 0 0 0 transparent inset,
+ 0 0 0 0 transparent inset; }
     @media only screen and (max-width: 992px) {
       .main-comunication__item {
         width: 100%;
@@ -10347,7 +10371,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       -webkit-flex-direction: column;
       -ms-flex-direction: column;
       flex-direction: column;
-      padding: 1em 1em 0 !important; }
+      padding: .3em 1em 0 !important; }
     .main-blog__article--image {
       display: block;
       width: 100%; }
